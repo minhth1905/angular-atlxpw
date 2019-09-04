@@ -1,0 +1,25 @@
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav color="primary" #sidenav fxLayout="column" mode="side"  opened="true">
+    <div fxLayout="column">
+      <a mat-button routerLink="/about-us">About us</a>
+      <a mat-button routerLink="/prices">Prices</a>
+      <a mat-button routerLink="/start-page">Start page</a>
+      <a mat-button routerLink="/offer">Offer</a>
+      <a mat-button routerLink="/contact">Contact</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div fxShow="true">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <a mat-button class="companyName" routerLink="/">
+        <span>Site name</span>
+      </a>
+      <span class="example-spacer"></span>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
